@@ -19,7 +19,7 @@ function App() {
     } else alert("already copied");
   }, [buttonClicked, password]);
 
-  //useCallBack hook memorizes function, and here if we give password instead of setPassword then it wil go in loop. we can also avoid that.
+  //useCallBack hook memoizes function, and here if we give password instead of setPassword then it will go in loop. we can also avoid that.
   const passwordGenerator = useCallback(() => {
     let pass = "";
     let str = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
